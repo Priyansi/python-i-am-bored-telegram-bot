@@ -5,6 +5,8 @@ import os
 from get_random_meme import get_meme
 from get_gangsta_text import text
 from get_movie_series import (get_recommendation, get_similar)
+from get_text_insult import get_insult
+from get_xkcd import get_comic
 PORT = int(os.environ.get('PORT', 5000))
 NEWLINE = '\n'
 WHITESPACE = ' '
@@ -38,6 +40,22 @@ def is_bad_word(text):
     with open("bad_words.txt") as file:
         bad_words = set(file.read().split(NEWLINE))
         return len(text & bad_words) > 0
+
+
+def xkcd(update, context):
+    context.bot.send_photo(
+        chat_id=update.effective_chat.id, photo=get_comic())
+
+
+def insult(update, context):
+    message = update.message.text.replace('/insult', ' ').strip()
+    response = get_insult()
+    if message == '':
+        context.bot.send_message(
+            chat_id=update.effective_chat.id, text=response)
+    else:
+        context.bot.send_message(
+            chat_id=update.effective_chat.id, text=message+" "+response.lower())
 
 
 def gangsta(update, context):
@@ -113,6 +131,12 @@ if __name__ == "__main__":
 
     similar_handler = CommandHandler('similar', similar)
     dispatcher.add_handler(similar_handler)
+
+    insult_handler = CommandHandler('insult', insult)
+    dispatcher.add_handler(insult_handler)
+
+    xkcd_handler = CommandHandler('xkcd', xkcd)
+    dispatcher.add_handler(xkcd_handler)
 
     updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
