@@ -1,6 +1,13 @@
 # I Am Bored Bot
 
-This is a Telegram bot that gets you hot Reddit memes by random or of a particular subreddit. It can also fetch posts from any subreddit as long it has pictures. Apart from this, it can also recommend you popular movies and similar movies. Bonus - It can convert any text to gangsta using [Gizoogle](http://www.gizoogle.net/textilizer.php). And it doesn't take to too lightly to profane words in any chat.
+This is a Telegram bot that -
+
+- Can get you hot Reddit memes by random or of a particular subreddit. It can also fetch posts from any subreddit as long it has pictures.
+- Can get you random xkcd comics.
+- Can recommend you popular movies and similar movies.
+- Can give you a random insult, or insult your friend, in English or Shakesperean English.
+- Can convert any text to gangsta using [Gizoogle](http://www.gizoogle.net/textilizer.php).
+  And it doesn't take to too lightly to profane words in any chat.
 
 Try it out [here](https://t.me/i_am_bored_bot).
 
