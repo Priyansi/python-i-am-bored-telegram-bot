@@ -9,7 +9,7 @@ This is a Telegram bot that -
 - Can convert any text to gangsta using [Gizoogle](http://www.gizoogle.net/textilizer.php).
   And it doesn't take to too lightly to profane words in any chat.
 
-Try it out [here](https://t.me/i_am_bored_bot).
+[![The Bot](https://forthebadge.com/images/badges/check-it-out.svg)](https://t.me/i_am_bored_bot)
 
 If you want to try it out yourself, this is the list of API keys and tokens you need :
 
@@ -19,3 +19,6 @@ If you want to try it out yourself, this is the list of API keys and tokens you 
 - CLIENT_ID, CLIENT_SECRET, USER_AGENT : Obtained when you create a Reddit app.
 - PASSWORD : Your Reddit password.
 - USERNAME : Your Reddit username.
+
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
